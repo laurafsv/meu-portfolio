@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>laurafersi.com</title>
+</head>
+<body>
+    <div id="barra-progresso"></div>
+    <header>
+
+        <div class="logo">
+            <img src="laura_ferreira_logo_transparente.png" alt="Minha logo">
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="intro">
+        <div class="intro-content">
+        <h2>Olá, me chamo Laura</h2>
+        <p><span id="typing-text"></span></p>
+    </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre mim</h2>
+        <div class="sobre-conteudo">
+            <img src="profile-pic-git.jpg" alt="Minha foto" class="foto-laura" />
+            <div class="texto-sobre">
+        <p>Sou estudante de TSI no IFSP e apaixonada por Front-End. Desde cedo me encantei com a combinação entre design e tecnologia, e foi no desenvolvimento web que encontrei meu lugar. Gosto de criar interfaces bonitas, funcionais e com foco na experiência do usuário. Sigo em constante aprendizado, buscando evoluir como desenvolvedora.</p>
+    </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h2><i class="fas fa-code"></i> Meus projetos</h2>
+        <br>
+        <div class="projetos-grid">
+
+            <div class="card-projeto">
+                <h3>Site Responsivo</h3>
+                <p>Um site feito com HTML CSS, adaptado para dispositivos móveis.</p>
+            </div>
+
+            <div class="card-projeto">
+                <h3>Clone da Netflix</h3>
+                <p>Clone visual da Netflix usando apenas HTML e CSS.</p>
+            </div>
+
+            <div class="card-projeto">
+                <h3>Portfólio</h3>
+                <p>Portfólio fictício de fotografia - Helena Oliveira.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contato">
+        <h2>Entre em contato comigo</h2>
+<br>
+        <p>
+            <a href="mailto:laura1807@gmail.com">📧 laura1807@gmail.com</a>
+        </p>
+        <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/laura-silva-54416735a/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/laurafsv" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer id="rodape">
+    <p>© 2025 Laura. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    window.addEventListener('scroll', () => {
+        const barra = document.getElementById('barra-progresso');
+        const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+        const progresso = (window.scrollY / scrollTotal) * 100;
+        barra.style.width = progresso + "%"
+    });
+</script>
+
+<a href="https://wa.me/5511945349511"
+class="whatsapp-float"
+target="_blank"
+aria-label="Converse comigo no WhatsApp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
